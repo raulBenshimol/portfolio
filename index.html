@@ -38,7 +38,6 @@
                 <div class="hero-imagen">
                     <div class="circulo-animado"></div>
                     <img class="foto-perfil" src="img/cara.jpg" alt="Foto Raul Benshimol">
-                    <!-- Datos sutiles debajo de la foto -->
                     <div class="datos-sutiles">
                         <p><span class="emoji">📞</span> +54 9 11 6586 9918</p>
                         <p><span class="emoji">✉️</span> <a href="mailto:rauljosebenshimol@gmail.com">rauljosebenshimol@gmail.com</a></p>
@@ -281,7 +280,7 @@
                         </a>
                         <p style="font-size: 0.75rem; margin-top: 0.5rem; opacity: 0.8;">UTN Buenos Aires - Completado 2025</p>
                     </div>
-                                        <div class="tarjeta-soporte">
+                    <div class="tarjeta-soporte">
                         <div class="soporte-icono">📘</div>
                         <h3>Tecnicatura en Programación - UTN BA</h3>
                         <div class="soporte-imagen">
@@ -337,7 +336,7 @@
         </section>
     </main>
 
-        <footer id="contacto">
+    <footer id="contacto">
         <div class="container-footer">
             <h2>Contactame</h2>
             <div class="social-links">
@@ -361,3 +360,27 @@
             <p class="copyright">© 2025 Raul Benshimol - Programación | Disponibilidad remota y presencial</p>
         </div>
     </footer>
+
+    <!-- JAVASCRIPT PARA MENÚ MÓVIL - ESTO ES LO QUE FALTABA -->
+    <script>
+        const menuMovil = document.getElementById('menuMovil');
+        const navHeader = document.querySelector('.nav-header');
+        
+        if(menuMovil && navHeader) {
+            menuMovil.addEventListener('click', function() {
+                navHeader.classList.toggle('active');
+                menuMovil.classList.toggle('active');
+            });
+            
+            // Cerrar menú al hacer click en un enlace
+            const navLinks = navHeader.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navHeader.classList.remove('active');
+                    menuMovil.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
