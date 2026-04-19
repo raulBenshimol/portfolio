@@ -1,172 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="icon" href="favicon.ico">-->
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Raul Benshimol | Programación</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-
 </head>
-
 <body>
+
     <header>
-        <h3>✅ Raul Benshimol</h3>
+        <div class="container-header">
+            <h3 class="logo">✅ {Raul Benshimol}</h3>
+            <nav class="nav-header">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#soportes">Certificados</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="menu-movil" id="menuMovil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
-    <section class="uno">
-        <div class="caja-central">
-            <div class="caja-cara">
-                <img class="cara" src="img/cara.jpg" alt="Foto Raul Benshimol">            
-            </div>
-            <div class="caja-presentacion">
-                <div>    
-                    <h1>¡Hola!</h1>
-                    <p class="presentacion">
-                        Mi nombre es Raul y estás viendo mi portfolio, vivo en Buenos Aires, 
-                        Partido de San Martin, Villa Maipu, Argentina, 
-                        puedo trabajar en campo, oficina, home office.
+
+    <main>
+        <!-- Sección Hero / Inicio -->
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-imagen">
+                    <div class="circulo-animado"></div>
+                    <img class="foto-perfil" src="img/cara.jpg" alt="Foto Raul Benshimol">
+                    <!-- Datos sutiles debajo de la foto -->
+                    <div class="datos-sutiles">
+                        <p><span class="emoji">📞</span> +54 9 11 6586 9918</p>
+                        <p><span class="emoji">✉️</span> <a href="mailto:rauljosebenshimol@gmail.com">rauljosebenshimol@gmail.com</a></p>
+                        <p><span class="emoji">📍</span> Villa Maipú, San Martín, Bs As</p>
+                        <p><span class="emoji">🌐</span> <a href="https://raulbenshimol.github.io/portfolio/" target="_blank">raulbenshimol.github.io/portfolio</a></p>
+                    </div>
+                </div>
+                <div class="hero-contenido">
+                    <div class="etiqueta">💻 Desarrollo de Software</div>
+                    <h1><span class="resaltado">{Programación}</span></h1>
+                    <div class="badge-programador">
+                        <span class="badge">C#</span>
+                        <span class="badge">.NET</span>
+                        <span class="badge">SQL</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">Angular</span>
+                    </div>
+                    <p class="hero-descripcion">
+                        <strong>Ingeniero Electrónico volcado a la programación</strong>. 
+                        Actualmente cursando <strong>3er cuatrimestre de la Tecnicatura en Programación</strong> en UTN Buenos Aires. 
+                        Busco oportunidades en <strong>IT y desarrollo tecnológico</strong>, conectando la electrónica con el mundo del software.
                     </p>
-                    <ul>
-                        <li>DNI: 96.153.900</li>
-                        <li>Fecha de Nacimiento: 26 de mayo de 1982.</li>
-                        <li>Lugar de Nacimiento: Táriba. Edo. Táchira, Venezuela.</li>
-                        <li>Número de Contacto: +54 9 11 6586 9918</li>
-                        <li><a href="mailto:rauljosebenshimol@gmail.com">rauljosebenshimol@gmail.com</a></li>
-                    </ul>
+                    <div class="disponibilidad-remoto">
+                        <span class="remoto-badge">🏠 Trabajo Remoto</span>
+                        <span class="remoto-badge">🏢 Híbrido</span>
+                        <span class="remoto-badge">📍 Presencial</span>
+                        <span class="remoto-badge">🚗 Movilidad propia</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="dos">
-        
-        <h2>Sobre mí</h2>
-        <div>
-            <p>
-                Ingeniero Electrónico con una sólida base técnica y una pasión por la tecnología, 
-                actualmente en proceso de expansión de mis habilidades hacia el mundo del desarrollo de software. 
-                Mi formación en ingeniería me ha proporcionado una excelente capacidad para la resolución de problemas, 
-                el pensamiento analítico y la atención al detalle, habilidades altamente transferibles al campo de la programación.
-            </p>
-            <p>
-                Actualmente, estoy cursando un posgrado en Gestión de Proyectos, lo que me permite comprender y aplicar metodologías ágiles y tradicionales 
-                en el desarrollo de proyectos tecnológicos. Además, soy estudiante de programación en la UTN Buenos Aires, 
-                donde estoy adquiriendo conocimientos en lenguajes y tecnologías de vanguardia.
-            </p>
-            <p>
-                Mi objetivo profesional es combinar mi experiencia en ingeniería electrónica con mis crecientes habilidades 
-                en programación para contribuir al desarrollo de soluciones innovadoras y eficientes. 
-                Estoy especialmente interesado en roles que me permitan aplicar mis conocimientos en áreas como:
-            </p>
-            <ul>
-                <li>Desarrollo de aplicaciones de escritorio y Web.</li>
-                <li>Gestión de proyectos tecnológicos.</li>
-                <li>Automatización de procesos.</li>
-            </ul>
-            <p>
-                Busco una oportunidad para crecer profesionalmente en un entorno dinámico y desafiante, 
-                donde pueda aplicar mis conocimientos y seguir aprendiendo.
-            </p>
-        </div>
-    </section>
-            <section class="cuatro">
-                <div>
-                    
-                    
-                    <h2 style="text-align: center;">Habilidades Destacadas</h2>
-                    <ul>
-                        <li>Formación en ingeniería electrónica.</li>
-                        <li>Habilidades en resolución de problemas y pensamiento analítico.</li>
-                        <li>Capacidad para aprender rápidamente nuevas tecnologías.</li>
-                        <li>Conocimientos básicos en programación adquiridos en la UTN BA.</li>
-                    </ul>
-                    <h3 style="text-align: center;">Información Adicional</h3>
-                    <ul>
-                        <li>Disponibilidad para trabajar en equipo y de forma autónoma.</li>
-                        <li>Proactivo y orientado a resultados.</li>
-                        <li>Interés en la mejora continua y el aprendizaje constante.</li>
-                    </ul>
-                    
-                </div>
         </section>
-        <section class="dos">
 
-            <h2>Aptitudes</h2>
-            <p>
-                Estas son algunas de las tecnologías de las que tengo conocimientos.
-            </p>
-            <div class="aptitudes">
-                <div class="tech-list">
-                    <img src="https://www.horuss.com.mx/wp-content/uploads/2019/04/c.png" class="tech" alt="">
-                    <img src="https://img.icons8.com/color/480/microsoft-sql-server.png" class="tech" alt="">
-                </div>
-                <div class="tech-list">
-                    <img src="https://static.vecteezy.com/system/resources/previews/011/260/238/large_2x/html5-css3-js-icon-set-web-development-logo-icon-set-of-html-css-and-javascript-programming-symbol-free-vector.jpg" class="tech" alt="">
-                    
-                    
+        <!-- Sobre mí -->
+        <section id="sobre-mi" class="seccion">
+            <div class="container">
+                <h2 class="titulo-seccion">Sobre <span class="resaltado">mí</span></h2>
+                <div class="contenido-texto">
+                    <p>
+                        <strong>Ingeniero Electrónico con una fuerte pasión por la programación</strong>, actualmente volcado al desarrollo de software. 
+                        Mi formación en ingeniería me ha proporcionado habilidades analíticas, capacidad de resolver problemas complejos 
+                        y una atención al detalle que aplico todos los días en mi aprendizaje como programador.
+                    </p>
+                    <p>
+                        <strong>Actualmente curso el 3er cuatrimestre de la Tecnicatura en Programación en UTN Buenos Aires</strong>, 
+                        donde estoy adquiriendo conocimientos sólidos en <strong>C#, .NET, SQL, HTML, CSS, JavaScript y TypeScript</strong>. 
+                        Además, <strong>completé el Posgrado en Gestión de Proyectos</strong> en UTN Buenos Aires para complementar mi perfil profesional.
+                    </p>
+                    <p>
+                        <strong>Busco oportunidades en el mundo IT y todo lo relacionado con el desarrollo tecnológico</strong>, 
+                        con el objetivo de encontrar un espacio donde pueda aplicar mis conocimientos en programación sin dejar de lado 
+                        mi formación como ingeniero electrónico. Me interesa especialmente conectar ambos mundos:
+                    </p>
+                    <div class="intereses-grid">
+                        <div class="interes-card">
+                            <span class="interes-icon">💻</span>
+                            <span>Desarrollo de aplicaciones Web y de escritorio</span>
+                        </div>
+                        <div class="interes-card">
+                            <span class="interes-icon">🔌</span>
+                            <span>Integración de software con sistemas electrónicos</span>
+                        </div>
+                        <div class="interes-card">
+                            <span class="interes-icon">⚙️</span>
+                            <span>Automatización y control de procesos</span>
+                        </div>
+                        <div class="interes-card">
+                            <span class="interes-icon">📊</span>
+                            <span>Bases de datos y Backend con C# y SQL</span>
+                        </div>
+                    </div>
+                    <p>
+                        Soy una persona <strong>adaptativa, autodidacta y con facilidad para incorporarme a nuevos entornos laborales</strong>. 
+                        <strong>Disponibilidad para trabajar remoto, híbrido o presencial</strong>, y con movilidad propia (auto Renault Logan 2021).
+                    </p>
                 </div>
             </div>
-        
-            <h2>Cursos realizados</h2>
-            <ul>
-                <li>Curso de Programación con C# Nivel 1 [Desde Cero]</li>
-                <li>Curso de Programación con C# Nivel 2: POO + .NET + SQL</li>
-            </ul>
         </section>
-    <section class="tres">
-        <h2>Mis Soportes</h2>
-        <div class="proyectos">
-            <div class="card">
-                <div>
-                    <h3>Ingeniero Electronico</h3>
-                    
-                </div>
-                <div>
-                    <img id="tituloo" src="img/fondoTitulo.png" alt="TITULO">
-                    <br>
-                    <br>
-                    <a href="soportes/TITULO DE INGENIERO.pdf" target="_blank">Ver</a>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Tecnico Medio en Electronica</h3>
-                <img src="img/fontoTecnico.png" alt="Titulo Tecnico">
-                <br>
-                <br>
-                <a href="soportes/TITULO DE TECNICO.pdf" target="_blank">Ver</a>
-            </div>
-            <div class="card">
-                <h3>C# Nivel 1</h3>
-                <img src="img/Nivel1.png" alt="C# Nivel1">
-                <br>
-                <br>
-                <a href="soportes/Nivel 1.pdf" target="_blank">Ver</a>
-            </div>
-            <div class="card">
-                <h3>C# Nivel 2: POO + .NET + SQL </h3>
-                <img src="img/Nivel2.png" alt="C# Nivel2">
-                <br>
-                <br>
-                <a href="soportes/Nivel 2.pdf" target="_blank">Ver</a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <h2>Contactame</h2>
-            <div class="contacto">
-                <a href="https://www.linkedin.com/in/raulBenshimol/" target="_blank">
-                    <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" class="red-social" alt="">
-                </a>
 
-                <hr>
-                <a href="https://github.com/raulBenshimol" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="red-social" alt="">
+        <!-- Habilidades -->
+        <section id="habilidades" class="seccion bg-oscuro">
+            <div class="container">
+                <h2 class="titulo-seccion">Lenguajes y <span class="resaltado">Tecnologías</span></h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-numero">3er</div>
+                        <div class="stat-texto">Cuatrimestre de Tecnicatura en Programación - UTN BA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-numero">100%</div>
+                        <div class="stat-texto">Compromiso con el aprendizaje continuo</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-numero">🏠</div>
+                        <div class="stat-texto">Trabajo Remoto / Híbrido / Presencial</div>
+                    </div>
+                </div>
+
+                <div class="grid-habilidades">
+                    <div class="tarjeta-habilidad">
+                        <div class="tarjeta-icono">💻</div>
+                        <h3>Lenguajes y Tecnologías</h3>
+                        <div class="tech-icons color-logos">
+                            <div class="tech-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                                <span>C#</span>
+                                <span class="tech-framework">.NET</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                                <span>TypeScript</span>
+                                <span class="tech-framework">Angular</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server">
+                                <span>SQL Server</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-habilidad">
+                        <div class="tarjeta-icono">📚</div>
+                        <h3>Formación Académica</h3>
+                        <ul>
+                            <li><strong>Tecnicatura en Programación</strong> - UTN Buenos Aires (3er cuatrimestre - cursando)</li>
+                            <li><strong>Posgrado en Gestión de Proyectos</strong> - UTN Buenos Aires (Completado - 2025)</li>
+                            <li><strong>Ingeniero Electrónico</strong> - Instituto Universitario Politécnico Santiago Mariño (2012)</li>
+                            <li><strong>Técnico Medio en Electrónica</strong> - Escuela Técnica Industrial "Eleazar López Contreras" (2000)</li>
+                        </ul>
+                    </div>
+                    <div class="tarjeta-habilidad">
+                        <div class="tarjeta-icono">🎯</div>
+                        <h3>Cursos Complementarios</h3>
+                        <ul>
+                            <li>Curso de Programación con C# Nivel 1 [Desde Cero]</li>
+                            <li>Curso de Programación con C# Nivel 2: POO + .NET + SQL</li>
+                            <li>Curso de Electrónica Industrial para Electricista - INCE</li>
+                            <li>Curso de diseño de circuitos impresos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nivel de conocimientos -->
+        <section class="seccion">
+            <div class="container">
+                <h2 class="titulo-seccion">Nivel de <span class="resaltado">conocimientos</span></h2>
+                <p class="texto-centrado">
+                    Estas son las tecnologías que estoy manejando actualmente y mi nivel de dominio.
+                </p>
+                <div class="aptitudes-grid">
+                    <div class="aptitud-item">
+                        <div class="aptitud-icono">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                        </div>
+                        <div class="aptitud-barra">
+                            <div class="barra-progreso" style="width: 75%"></div>
+                        </div>
+                        <span class="aptitud-nombre">C# / .NET - 75%</span>
+                    </div>
+                    <div class="aptitud-item">
+                        <div class="aptitud-icono">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <div class="aptitud-barra">
+                            <div class="barra-progreso" style="width: 65%"></div>
+                        </div>
+                        <span class="aptitud-nombre">JavaScript - 65%</span>
+                    </div>
+                    <div class="aptitud-item">
+                        <div class="aptitud-icono">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        </div>
+                        <div class="aptitud-barra">
+                            <div class="barra-progreso" style="width: 60%"></div>
+                        </div>
+                        <span class="aptitud-nombre">TypeScript - 60%</span>
+                    </div>
+                    <div class="aptitud-item">
+                        <div class="aptitud-icono">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+                        </div>
+                        <div class="aptitud-barra">
+                            <div class="barra-progreso" style="width: 55%"></div>
+                        </div>
+                        <span class="aptitud-nombre">Angular - 55%</span>
+                    </div>
+                    <div class="aptitud-item">
+                        <div class="aptitud-icono">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server">
+                        </div>
+                        <div class="aptitud-barra">
+                            <div class="barra-progreso" style="width: 70%"></div>
+                        </div>
+                        <span class="aptitud-nombre">SQL Server - 70%</span>
+                    </div>
+                    <div class="aptitud-item">
+                        <div class="aptitud-icono">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML/CSS">
+                        </div>
+                        <div class="aptitud-barra">
+                            <div class="barra-progreso" style="width: 80%"></div>
+                        </div>
+                        <span class="aptitud-nombre">HTML/CSS - 80%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificados -->
+        <section id="soportes" class="seccion bg-acento">
+            <div class="container">
+                <h2 class="titulo-seccion titulo-blanco">Mis <span class="resaltado-claro">Certificados</span></h2>
+                <div class="grid-soportes">
+                    <div class="tarjeta-soporte">
+                        <div class="soporte-icono">📊</div>
+                        <h3>Posgrado en Gestión de Proyectos</h3>
+                        <div class="soporte-imagen">
+                            <img src="img/posgrado.png" alt="Posgrado Gestión de Proyectos">
+                        </div>
+                        <a href="soportes/Certificado_Gestion_de_Proyectos.png" target="_blank" class="btn-ver">
+                            Ver documento <span>→</span>
+                        </a>
+                        <p style="font-size: 0.75rem; margin-top: 0.5rem; opacity: 0.8;">UTN Buenos Aires - Completado 2025</p>
+                    </div>
+                                        <div class="tarjeta-soporte">
+                        <div class="soporte-icono">📘</div>
+                        <h3>Tecnicatura en Programación - UTN BA</h3>
+                        <div class="soporte-imagen">
+                            <img src="img/utnTecnicatura.png" alt="Certificado UTN">
+                        </div>
+                        <a href="soportes/utnTecnicatura.pdf" target="_blank" class="btn-ver">
+                            Ver documento <span>→</span>
+                        </a>
+                        <p style="font-size: 0.75rem; margin-top: 0.5rem; opacity: 0.8;">3er cuatrimestre - Cursando actualmente</p>
+                    </div>
+                    <div class="tarjeta-soporte">
+                        <div class="soporte-icono">🎓</div>
+                        <h3>Ingeniero Electrónico</h3>
+                        <div class="soporte-imagen">
+                            <img src="img/fondoTitulo.png" alt="Título Ingeniero">
+                        </div>
+                        <a href="soportes/TITULO DE INGENIERO.pdf" target="_blank" class="btn-ver">
+                            Ver documento <span>→</span>
+                        </a>
+                    </div>
+                    <div class="tarjeta-soporte">
+                        <div class="soporte-icono">🔧</div>
+                        <h3>Técnico Medio en Electrónica</h3>
+                        <div class="soporte-imagen">
+                            <img src="img/fontoTecnico.png" alt="Título Técnico">
+                        </div>
+                        <a href="soportes/TITULO DE TECNICO.pdf" target="_blank" class="btn-ver">
+                            Ver documento <span>→</span>
+                        </a>
+                    </div>
+                    <div class="tarjeta-soporte">
+                        <div class="soporte-icono">💻</div>
+                        <h3>C# Nivel 1</h3>
+                        <div class="soporte-imagen">
+                            <img src="img/Nivel1.png" alt="Certificado C# Nivel 1">
+                        </div>
+                        <a href="soportes/Nivel 1.pdf" target="_blank" class="btn-ver">
+                            Ver documento <span>→</span>
+                        </a>
+                    </div>
+                    <div class="tarjeta-soporte">
+                        <div class="soporte-icono">🚀</div>
+                        <h3>C# Nivel 2: POO + .NET + SQL</h3>
+                        <div class="soporte-imagen">
+                            <img src="img/Nivel2.png" alt="Certificado C# Nivel 2">
+                        </div>
+                        <a href="soportes/Nivel 2.pdf" target="_blank" class="btn-ver">
+                            Ver documento <span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer id="contacto">
+        <div class="container-footer">
+            <h2>Contactame</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/raulBenshimol/" target="_blank" class="social-icon">
+                    <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/raulBenshimol" target="_blank" class="social-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://wa.me/5491165869918" target="_blank" class="social-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    <span>WhatsApp</span>
+                </a>
+                <a href="mailto:rauljosebenshimol@gmail.com" class="social-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail">
+                    <span>Gmail</span>
                 </a>
             </div>
+            <p class="copyright">© 2025 Raul Benshimol - Programación | Disponibilidad remota y presencial</p>
+        </div>
     </footer>
-</body>
-</html>
